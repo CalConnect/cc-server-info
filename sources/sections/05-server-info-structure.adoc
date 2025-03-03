@@ -1,0 +1,108 @@
+== Server Information Document Structure
+
+This specification defines a new XML document type "server-info". All XML elements in this
+specification are in the DAV name space.
+
+=== Server Information server-info element
+
+At the top level of the document is a "server-info" element which encloses a change token, an
+optional "features" element and an "applications" element:
+
+[source%unnumbered,xml]
+----
+<?xml version="1.0" encoding="utf-8"?>
+<server-info xmlns="DAV">
+  <token>...</token>
+  <server>
+    <name>...</name>
+    <version>...</version>
+  </server>
+  <features>
+    ...
+  </features>
+  <applications>
+    ...
+  </applications>
+</server-info>
+----
+
+If a "features" element appears inside the "server-info" element then the features apply to
+all applications.
+
+=== Server Information server element
+
+The optional "server" element appears once and contains a name and version for the server. The
+values for both those elements is server specific.
+
+=== Server Information applications element
+
+The "applications" element appears once and contains 0 or more "application" elements each of
+which provides information about a application.
+
+NOTE: do the applications have to be on the same host? I think not.
+
+==== Server Information application element
+
+The "application" element contains the name and information about the location of that
+application and how to obtain a application specific server-info document.
+
+It may also contain a "features" element which lists features implemented by that application.
+
+For example:
+
+[source%unnumbered,xml]
+----
+<applications>
+  <application>
+    <name>caldav</name>
+    <features>
+      <CALDAV:calendar-access />
+      <CS:sharing>
+          <CS:no-scheduling />
+      </CS:sharing>
+    </features>
+  </application>
+</applications>
+----
+
+=== Server Information features element
+
+The "features" element contains 0 or more elements each specifying a feature supported by that
+application.
+
+The "features" element may appear within the "server-info" element - in which case it applies
+to all applications or it may appear inside a "application" element in which case it only
+applies to that application.
+
+When a single application is specified the features named SHOULD be accessible for the same
+authentication and authorization level.
+
+==== Server Information feature element
+
+A feature is specified by an element defined in this document or by an element defined in the
+specification for that feature.
+
+WebDAV feature elements correspond to, but are not exactly the same as, the elements returned
+in the DAV header field.
+
+Some features have no corresponding DAV header field element. This may be because the feature
+is not available on all resources. The occurrence of a such a feature simply advertises the
+availability of that feature on some resources.
+
+For an application supporting this specification, the absence of a feature means that this
+feature is NOT supported on any resource.
+
+For example, a calendar application may return the following which specifies a global set of
+features:
+
+[source%unnumbered,xml]
+----
+<features>
+  <DAV:class-1 />
+  <DAV:class-2 />
+  <DAV:access-control />
+  <CALDAV:calendar-access />
+  <CALDAV:calendar-availability />
+  <CALDAV:calendar-auto-schedule />
+</features>
+----

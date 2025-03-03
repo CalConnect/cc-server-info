@@ -1,22 +1,21 @@
-= CalConnect Standard: (TITLE)
+= CalConnect Standard: DAV Server Information Object
 
-This work item belongs to CalConnect (TCs).
+This work item belongs to CalConnect TC CALSPAM.
 
 image:https://github.com/CalConnect/cc-server-info/workflows/generate/badge.svg["Build Status", link="https://github.com/CalConnect/cc-server-info/actions?workflow=generate"]
 
 This document is available in its rendered forms here:
 
-* https://calconnect.github.io/cc-server-info/[CalConnect: Calendaring and scheduling -- Vocabulary (HTML)]
+* https://calconnect.github.io/cc-server-info/[CalConnect: DAV Server Information Object (HTML)]
 
 == General
 
-This document specifies the (TITLE).
+This document specifies the DAV Server Information Object.
 
 The document is published as the following:
 
-* CalConnect CC (DOCNUMBER)
-* ISO (DOCNUMBER)
-* IETF draft-cc-server-info
+* CalConnect CC 51022
+* IETF draft-douglass-server-info
 
 
 == Fetching the document
@@ -62,17 +61,6 @@ The generated documents are accessible under `_site/`.
 metanorma site generate --agree-to-terms
 open _site/index.html
 ----
-
-
-// == IETF: Checking against idnits
-
-// https://tools.ietf.org/tools/idnits/[idnits] is the RFC checking tool prior to
-// submissions.
-
-// [source,sh]
-// ----
-// idnits draft-calconnect-vobject-vformat.nits
-// ----
 
 
 == License

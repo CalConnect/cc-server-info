@@ -1,0 +1,48 @@
+= DAV Server Information Object
+:docnumber: 51022
+:copyright-year: 2016
+:language: en
+:doctype: standard
+:edition: 1
+:status: working-draft
+:revdate: 2016-04-01
+:published-date: 2016-04-01
+:technical-committee: TC CALSPAM
+:fullname: Michael Douglass
+:surname: Douglass
+:givenname: Michael
+:affiliation: Spherical Cow Group
+:mn-document-class: cc
+:mn-output-extensions: xml,html,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+include::sections/00-abstract.adoc[]
+
+include::sections/01-introduction.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-norm-refs.adoc[]
+
+include::sections/03-terms.adoc[]
+
+include::sections/04-server-info-use.adoc[]
+
+include::sections/05-server-info-structure.adoc[]
+
+include::sections/06-xml-elements.adoc[]
+
+include::sections/07-webdav-features.adoc[]
+
+include::sections/08-caldav-features.adoc[]
+
+include::sections/09-examples.adoc[]
+
+include::sections/10-notes.adoc[]
+
+include::sections/11-security.adoc[]
+
+include::sections/12-iana.adoc[]
+
+include::sections/13-acknowledgments.adoc[]
