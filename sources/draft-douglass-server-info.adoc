@@ -1,0 +1,51 @@
+= DAV Server Information Object
+:doctype: internet-draft
+:name: draft-douglass-server-info-03
+:status: standard
+:ipr: trust200902
+:area: Applications
+:intended-series: standard
+:workgroup: Network Working Group
+:published-date: 2016-04-01
+:fullname: Michael Douglass
+:lastname: Douglass
+:forename_initials: M.
+:affiliation: Spherical Cow Group
+:address: 226 3rd Street + \
+Troy, NY 12180 + \
+United States of America
+:email: mdouglass@sphericalcowgroup.com
+:contributor-uri: http://sphericalcowgroup.com
+:organization: Spherical Cow Group
+:mn-document-class: ietf
+:mn-output-extensions: xml,rfc,txt,html,rxl
+:local-cache-only:
+:data-uri-image:
+
+include::sections/00-abstract.adoc[]
+
+include::sections/01-introduction.adoc[]
+
+include::sections-ietf/03-conventions.adoc[]
+
+include::sections/04-server-info-use.adoc[]
+
+include::sections/05-server-info-structure.adoc[]
+
+include::sections/06-xml-elements.adoc[]
+
+include::sections/07-webdav-features.adoc[]
+
+include::sections/08-caldav-features.adoc[]
+
+include::sections/09-examples.adoc[]
+
+include::sections/10-notes.adoc[]
+
+include::sections/11-security.adoc[]
+
+include::sections/12-iana.adoc[]
+
+include::sections/13-acknowledgments.adoc[]
+
+include::sections-ietf/99-references.adoc[]

@@ -2,10 +2,9 @@
 metanorma:
   source:
     files:
-      - sources/cc-51008/document.adoc
-      - sources/ietf/document.adoc
-      - sources/iso-51008/document.adoc
+      - sources/cc-51022.adoc
+      - sources/draft-douglass-server-info.adoc
 
   collection:
-    name: vObject and vFormat
     organization: CalConnect
+    name: DAV Server Information Object

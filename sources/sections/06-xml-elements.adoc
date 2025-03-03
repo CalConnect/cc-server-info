@@ -1,0 +1,100 @@
+== XML Element Definitions
+
+All elements defined in this section are in the "DAV" namespace unless otherwise specified.
+
+=== server-info XML element
+
+Name:: server-info
+Purpose:: Contains information about a server.
+Definition::
++
+[source%unnumbered,xml]
+----
+<!ELEMENT server-info (token, server-instance-info?, features?, applications?) >
+----
+
+=== token XML element
+
+Name:: token
+Purpose:: Contains an opaque token which changes when the document changes.
+Definition::
++
+[source%unnumbered,xml]
+----
+<!ELEMENT token (#PCDATA) >
+----
+
+=== server-instance-info XML element
+
+Name:: server-instance-info
+Purpose:: Contains name and version information for a server.
+Definition::
++
+[source%unnumbered,xml]
+----
+<!ELEMENT server-instance-info (server-name*, server-version*,
+                               server-link, server-contact) >
+* product name
+* product version
+* product bug tracker link (or just link)
+* system administrator contact ("mailto:", "tel:" an embedded vcard or a link to a vcard?)
+* operating system info (string like the result of "uname -a" on POSIX systems)
+----
+
+=== name XML element
+
+Name:: name
+Purpose:: Within an application or feature element provides the registered name of that application or
+feature.
++
+Within a server element the value of the name element is any text string.
+Definition::
++
+[source%unnumbered,xml]
+----
+<!ELEMENT name (#PCDATA) >
+----
+
+=== version XML element
+
+Name:: version
+Purpose:: Within a server element the value of the version element is any text string.
+Definition::
++
+[source%unnumbered,xml]
+----
+<!ELEMENT version (#PCDATA) >
+----
+
+=== applications XML element
+
+Name:: applications
+Purpose:: Contains information about all applications on a host.
+Definition::
++
+[source%unnumbered,xml]
+----
+<!ELEMENT applications (application*) >
+----
+
+=== application XML element
+
+Name:: application
+Purpose:: Contains information about a specific application on a host.
+Definition::
++
+[source%unnumbered,xml]
+----
+<!ELEMENT application (name, features) >
+----
+
+=== features XML element
+
+Name:: features
+Purpose:: Contains information about all application features on a host.
+Definition::
++
+[source%unnumbered,xml]
+----
+<!ELEMENT features ANY* >
+----
