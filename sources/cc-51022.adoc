@@ -7,7 +7,7 @@
 :status: working-draft
 :revdate: 2016-04-01
 :published-date: 2016-04-01
-:technical-committee: TC CALSPAM
+:technical-committee: CALENDAR
 :fullname: Michael Douglass
 :surname: Douglass
 :givenname: Michael

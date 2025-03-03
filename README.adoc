@@ -1,6 +1,6 @@
 = CalConnect Standard: DAV Server Information Object
 
-This work item belongs to CalConnect TC CALSPAM.
+This work item belongs to CalConnect TC CALENDAR.
 
 image:https://github.com/CalConnect/cc-server-info/workflows/generate/badge.svg["Build Status", link="https://github.com/CalConnect/cc-server-info/actions?workflow=generate"]
 
