@@ -2,32 +2,52 @@
 
 === MIME media type Registrations
 
-Media Type:: This section defines the MIME media type for use with the server information
-document.
+Media Type:: This section defines the MIME media type for use with the server
+information document.
+
 Type name:: application
+
 Subtype name:: server-info+xml
+
 Required parameters:: None
-Optional parameters:: charset as defined for application/xml in RFC 3023; per RFC 3023, use
-of the charset property parameter with the value "utf-8" is STRONGLY RECOMMENDED.
-Encoding considerations:: Same as encoding considerations of application/xml as specified in RFC 3023.
+
+Optional parameters:: charset as defined for application/xml in RFC 3023; per
+RFC 3023, use of the charset property parameter with the value "utf-8" is
+STRONGLY RECOMMENDED.
+
+Encoding considerations:: Same as encoding considerations of application/xml as
+specified in RFC 3023.
+
 Security considerations:: See previous section.
-Interoperability considerations:: This media type provides an alternative format for iCalendar
-data based on XML.
+
+Interoperability considerations:: This media type provides an alternative format
+for iCalendar data based on XML.
+
 Published specification:: This specification.
+
 Additional information::
+
 Magic number(s):: None
+
 File extension(s):: xml
+
 Macintosh file type code(s):: None specified.
+
 Person & email address to contact for further information:: calsify@ietf.org
+
 Intended usage:: COMMON
-Restrictions on usage:: There are no restrictions on where this media type can be used.
+
+Restrictions on usage:: There are no restrictions on where this media type can
+be used.
+
 Author:: See the "Authors' Addresses" section of this document.
+
 Change controller:: IETF
 
 === New Link reltype Registration
 
-The link relation type "server-info" has been added to the Reference Types Registry defined in
-<<RFC5988,section=6.2>> with the following values:
+The link relation type "server-info" has been added to the Reference Types
+Registry defined in <<RFC5988,section=6.2>> with the following values:
 
 * Relation Name: server-info
 * Description: Provides the location of and current token for the server information document
