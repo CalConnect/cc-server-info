@@ -1,6 +1,8 @@
 == CalDAV Features
 
-Here we define the feature elements for features defined in the various CalDAV related specifications.
+Here we define the feature elements for features defined in the various CalDAV
+related specifications.
+
 All of these are under the CalDAV namespace:
 
 `urn:ietf:params:xml:ns:caldav`
@@ -17,9 +19,13 @@ All of these are under the CalDAV namespace:
 === CalDAV calendar-access feature XML element
 
 Namespace:: urn:ietf:params:xml:ns:caldav
+
 Name:: calendar-access
+
 Reference:: <<RFC4791>>
+
 Description:: Calendar access
+
 Definition::
 +
 [source%unnumbered,xml]
@@ -30,9 +36,13 @@ Definition::
 === CalDAV calendar-auto-schedule feature XML element
 
 Namespace:: urn:ietf:params:xml:ns:caldav
+
 Name:: calendar-auto-schedule
+
 Reference:: <<RFC4791>>
+
 Description:: CalDAV implicit scheduling
+
 Definition::
 +
 [source%unnumbered,xml]
@@ -43,9 +53,13 @@ Definition::
 === CalDAV calendar-no-timezone feature XML element
 
 Namespace:: urn:ietf:params:xml:ns:caldav
+
 Name:: calendar-no-timezone
+
 Reference:: <<RFC4791>>
+
 Description:: CalDAV implicit timezones
+
 Definition::
 +
 [source%unnumbered,xml]

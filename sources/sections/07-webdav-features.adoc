@@ -1,9 +1,10 @@
 == WebDAV Features
 
-Here we define the feature elements for features defined in the various DAV related specifications.
+Here we define the feature elements for features defined in the various DAV
+related specifications.
 
-Specifications which extend this specification should define additions to this table. In addition, they
-may define the XML specification for that element.
+Specifications which extend this specification should define additions to this
+table. In addition, they may define the XML specification for that element.
 
 [cols="3"]
 |===
@@ -25,10 +26,15 @@ may define the XML specification for that element.
 === DAV class-1 feature XML element
 
 Namespace:: DAV
+
 Name:: class-1
+
 DAV Header Name:: 1
+
 Reference:: <<RFC4918,section=18.1>>
+
 Description:: Class 1 compliant resource
+
 Definition::
 +
 [source%unnumbered,xml]
@@ -39,10 +45,15 @@ Definition::
 === DAV class-2 feature XML element
 
 Namespace:: DAV
+
 Name:: class-2
+
 DAV Header Name:: 2
+
 Reference:: <<RFC4918,section=18.2>>
+
 Description:: Class 2 compliant resource
+
 Definition::
 +
 [source%unnumbered,xml]
@@ -53,10 +64,15 @@ Definition::
 === DAV class-3 feature XML element
 
 Namespace:: DAV
+
 Name:: class-3
+
 DAV Header Name:: 3
+
 Reference:: <<RFC4918,section=18.3>>
+
 Description:: Class 3 compliant resource
+
 Definition::
 +
 [source%unnumbered,xml]
@@ -67,10 +83,15 @@ Definition::
 === DAV access control feature XML element
 
 Namespace:: DAV
+
 Name:: access-control
+
 DAV Header Name:: access-control
+
 Reference:: <<RFC3744,section=7.2>>
+
 Description:: WebDAV ACL
+
 Definition::
 +
 [source%unnumbered,xml]
@@ -81,10 +102,15 @@ Definition::
 === DAV version control feature XML element
 
 Namespace:: DAV
+
 Name:: version-control
+
 DAV Header Name:: version-control
+
 Reference:: <<RFC3253,section=3>>
+
 Description:: WebDAV DeltaV
+
 Definition::
 +
 [source%unnumbered,xml]
@@ -95,10 +121,15 @@ Definition::
 === DAV Extended mkcol feature XML element
 
 Namespace:: DAV
+
 Name:: extended-mkcol
+
 DAV Header Name:: extended-mkcol
+
 Reference:: <<RFC5689,section=3.1>>
+
 Description:: Extended mkcol
+
 Definition::
 +
 [source%unnumbered,xml]
@@ -109,10 +140,15 @@ Definition::
 === DAV bind feature XML element
 
 Namespace:: DAV
+
 Name:: bind
+
 DAV Header Name:: bind
+
 Reference:: <<RFC5842>>
+
 Description:: Binding extensions
+
 Definition::
 +
 [source%unnumbered,xml]
@@ -123,9 +159,13 @@ Definition::
 === DAV search feature XML element
 
 Namespace:: DAV
+
 Name:: search
+
 Reference:: <<RFC5323>>
+
 Description:: Search extensions
+
 Definition::
 +
 [source%unnumbered,xml]
@@ -136,10 +176,14 @@ Definition::
 === DAV quota feature XML element
 
 Namespace:: DAV
+
 Name:: quota
+
 Reference:: <<RFC4331>>
-Description:: DAV quotas. May not apply to all resources. Absence of this feature implies no support on
-any resource.
+
+Description:: DAV quotas. May not apply to all resources. Absence of this
+feature implies no support on any resource.
+
 Definition::
 +
 [source%unnumbered,xml]
@@ -150,10 +194,14 @@ Definition::
 === DAV Sync Collection feature XML element
 
 Namespace:: DAV
+
 Name:: sync-collection
+
 Reference:: <<RFC6578>>
-Description:: Collection synchronization report. May not apply to all resources. Absence of this feature
-implies no support on any resource.
+
+Description:: Collection synchronization report. May not apply to all resources.
+Absence of this feature implies no support on any resource.
+
 Definition::
 +
 [source%unnumbered,xml]
@@ -164,10 +212,14 @@ Definition::
 === DAV Add Member feature XML element
 
 Namespace:: DAV
+
 Name:: add-member
+
 Reference:: <<RFC6578>>
-Description:: Using POST to add a member to a collection. May not apply to all resources. Absence of this
-feature implies no support on any resource.
+
+Description:: Using POST to add a member to a collection. May not apply to all
+resources. Absence of this feature implies no support on any resource.
+
 Definition::
 +
 [source%unnumbered,xml]

@@ -1,30 +1,32 @@
 == Conventions Used in This Document
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",
-"MAY", and "OPTIONAL" in this document are to be interpreted as described in <<RFC2119>>.
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
+"SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
+interpreted as described in <<RFC2119>>.
 
 === Application
 
-An application running on one or more hosts at the network application layer and above. The application may
-provide data storage, manipulation, presentation, communication or other capabilities. The application may
-use a well defined protocol and is often implemented with a client-server relationship.
+An application running on one or more hosts at the network application layer and
+above. The application may provide data storage, manipulation, presentation,
+communication or other capabilities. The application may use a well defined
+protocol and is often implemented with a client-server relationship.
 
-A application will usually implement one or more features which may be defined by standard specifications.
-Applications and features may also be constrained by various limits.
+A application will usually implement one or more features which may be defined
+by standard specifications. Applications and features may also be constrained by
+various limits.
 
 Examples of applications are:
 
-* caldav
-* email
-* File servers
+* caldav * email * File servers
 
 === Feature
 
-A feature is some functionality provided by a application. For example, a DAV based application may provide
-the versioning feature.
+A feature is some functionality provided by a application. For example, a DAV
+based application may provide the versioning feature.
 
-Applications need not support all features that are defined as an optional part of that application. Some
-features may depend on the authenticated state and/or the authorization of the authenticated principal.
+Applications need not support all features that are defined as an optional part
+of that application. Some features may depend on the authenticated state and/or
+the authorization of the authenticated principal.
 
 Examples of features are:
 

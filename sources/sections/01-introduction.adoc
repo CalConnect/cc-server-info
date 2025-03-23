@@ -3,14 +3,15 @@
 Any given host on a network may support a number of applications. Each will have
 limits or optional features. The advertising and discovery of applications,
 features and limits is often through the use of properties and headers. As the
-number of applications and features grows the amount of data and complexity of the
-requests grows.
+number of applications and features grows the amount of data and complexity of
+the requests grows.
 
 Additionally, headers and properties don't allow for caching mechanisms based on
-etags. A client has to fetch all the information and compare with its stored copies
-to determine if a application change has taken place.
+etags. A client has to fetch all the information and compare with its stored
+copies to determine if a application change has taken place.
 
 This specification defines a new XML document type which can be retrieved from a
-host and is easily extended to allow the description of complex applications. The
-schema as described here only handles basic DAV applications. Other specifications
-will extend this specification to define elements for other DAV based applications.
+host and is easily extended to allow the description of complex applications.
+The schema as described here only handles basic DAV applications. Other
+specifications will extend this specification to define elements for other DAV
+based applications.

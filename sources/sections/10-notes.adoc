@@ -4,19 +4,17 @@ Tag enabling synchronization
 
 Document location (section 3)
 
-server-info token in DAV header returned as part
-of OPTIONS response
+server-info token in DAV header returned as part of OPTIONS response
 
-Clients that see that and do not have a server-info document for that application
-should do a propfind to discover document href.
+Clients that see that and do not have a server-info document for that
+application should do a propfind to discover document href.
 
 Authenticated v unauth
 
-Clients may fetch the si doc in an
-unauth mode. When they auth they must recheck their token and refetch if appropriate.
+Clients may fetch the si doc in an unauth mode. When they auth they must recheck
+their token and refetch if appropriate.
 
-Caching by
-intermediaries might be an issue Server info may vary by user-agent.
+Caching by intermediaries might be an issue Server info may vary by user-agent.
 
 * product name
 * product version
