@@ -1,3 +1,5 @@
+# metanorma.release.yml — cc-server-info
+
 documents:
-  - source: sources/cc-51022.adoc
-  - source: sources/draft-douglass-server-info.adoc
+  - pattern: "cc-*"
+    channels: [public/standards]
